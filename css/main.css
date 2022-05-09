@@ -108,11 +108,35 @@ body {
   height: 100%;
 }
 
+header, footer {
+    height: 80px;
+    width: 100%;
+}
+
+main {
+    height: 100px;
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+
+footer {
+    border-top: 3px solid black;
+}
+
+header, footer, main {
+    display: flex;
+}
+
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
+}
+
+header {
+    font-size: 2em;
 }
 
 .div-1, .div-2, .div-3 {
